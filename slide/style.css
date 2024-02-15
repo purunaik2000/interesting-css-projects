@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.container > .left,
+.right {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  transition: top 2s;
+}
+
+.container > .left > .box {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.container > .left > .box > h1 {
+    font-size: 2.5rem;
+}
+
+.container > .left > .box > p {
+    font-size: 1.2rem;
+}
+
+.container > .left > #box-1 {
+  background-color: rgb(247, 192, 228);
+}
+
+.container > .left > #box-2 {
+  background-color: lightblue;
+}
+
+.container > .left > #box-3 {
+  background-color: magenta;
+}
+
+.container > .left > #box-4 {
+  background-color: yellow;
+}
+
+.container > .left > #box-5 {
+  background-color: rgb(255, 97, 255);
+}
+
+.container > .left > #box-6 {
+  background-color: greenyellow;
+}
+
+.container > .right {
+  left: 50%;
+}
+
+.container > .right > .img {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container > .right > #img-6 {
+  background-image: url("./assets/pink-flowers-on-pink-background-ai-generated-free-photo.jpg");
+}
+
+.container > .right > #img-5 {
+  background-image: url("./assets/Blue-Flowers.jpg");
+}
+
+.container > .right > #img-4 {
+  background-image: url("./assets/magenta-flower.jpg");
+}
+
+.container > .right > #img-3 {
+  background-image: url("./assets/yellow-chrysanthemum-flowers.jpg");
+}
+
+.container > .right > #img-2 {
+  background-image: url("./assets/purple-floral-shine-butterfly-flowers-purple.jpg");
+}
+
+.container > .right > #img-1 {
+  background-image: url("./assets/green-flower.jpg");
+}
+
+.btn {
+  height: 3rem;
+  width: 2rem;
+  font-size: 2rem;
+  position: absolute;
+  opacity: 0.2;
+  border: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+#down-btn {
+  top: 50%;
+  left: calc(50% - 2rem);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 10px;
+}
+
+#up-btn {
+  bottom: 50%;
+  right: calc(50% - 2rem);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 5px;
+}
+
+
+@media (max-width: 500px) {
+    html {
+        font-size: 8px;
+    }
+}
